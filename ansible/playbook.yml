@@ -1,0 +1,7 @@
+---
+- name: Development Environment
+  hosts: all
+  sudo: yes
+
+  roles:
+    - common
