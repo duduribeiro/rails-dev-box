@@ -1,0 +1,5 @@
+- name: install Rails
+  sudo: no
+  shell: /home/vagrant/.rvm/bin/rvm {{ruby_version}} do gem install --no-ri --no-rdoc rails
+  tags:
+    - rails

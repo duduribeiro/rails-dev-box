@@ -17,3 +17,6 @@
     name=bundler
     user_install=no
     state=latest
+  tags: 
+    - ruby
+    - rvm

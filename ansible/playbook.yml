@@ -8,4 +8,5 @@
   roles:
     - common
     - rvm
+    - rails
     - postgresql
