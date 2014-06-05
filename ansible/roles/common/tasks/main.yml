@@ -8,3 +8,9 @@
     - git
     - curl
     - libpq-dev
+    - libxml2
+    - libxml2-dev
+    - libxslt1-dev 
+    - libyaml-dev
+    - vim
+    - nodejs
