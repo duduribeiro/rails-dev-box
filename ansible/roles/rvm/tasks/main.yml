@@ -1,0 +1,13 @@
+- name: Install RVM
+  sudo: no
+  shell: "curl -sSL https://get.rvm.io | bash"
+  tags:
+    - ruby
+    - rvm
+
+- name: Install Ruby
+  sudo: no
+  shell: /home/vagrant/.rvm/bin/rvm install --default {{ruby_version}}
+  tags:
+    - ruby
+    - rvm
