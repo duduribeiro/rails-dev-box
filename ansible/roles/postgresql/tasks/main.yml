@@ -1,0 +1,35 @@
+- name: Install PostgreSQL
+  apt: "pkg={{item}} state=latest force=yes"
+  with_items:
+    - postgresql-9.3
+    - postgresql-contrib-9.3
+    - libpq-dev
+    - python-psycopg2
+  tags:
+    - postgresql
+
+- name: Update pg_hba to use md5 auth
+  lineinfile: >
+    dest=/etc/postgresql/9.3/main/pg_hba.conf
+    regexp='local\s*all\s*all\s*peer'
+    line='local all all md5'
+    backrefs=yes
+    state=present
+  tags:
+    - postgresql
+
+
+
+- name: Create vagrant user with CREATE privileges.
+  sudo_user: postgres
+  postgresql_user: name=vagrant password=NULL role_attr_flags=CREATEDB,NOSUPERUSER
+  tags:
+    - postgresql
+
+- name: Create vagrant database
+  sudo_user: postgres
+  postgresql_db: >
+    name=vagrant
+    owner=vagrant
+    state=present
+    encoding=UTF-8
