@@ -14,7 +14,7 @@
 
 ### Configurations
 You can configure variables in ansible/vars/main.yml
-```
+```ruby
   ruby_version: 2.1.2  # The ruby version you wanna install
 
   # The following vars are conditional vars. If specified yes, install.
