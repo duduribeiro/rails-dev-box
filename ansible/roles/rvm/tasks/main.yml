@@ -11,3 +11,9 @@
   tags:
     - ruby
     - rvm
+
+- name: Install Bundler
+  gem: >
+    name=bundler
+    user_install=no
+    state=latest
