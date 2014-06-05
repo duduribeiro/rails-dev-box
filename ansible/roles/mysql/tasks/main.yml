@@ -1,0 +1,11 @@
+- name: Install MySQL server
+  apt: "pkg={{item}} state=latest force=yes "
+  with_items:
+    - mysql-client
+    - mysql-server
+    - python-mysqldb
+  tags:
+    - mysql
+
+- name: Create vagrant user in MySQL
+  mysql_user: name=vagrant password=NULL priv=*.*:ALL state=present

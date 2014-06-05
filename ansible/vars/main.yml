@@ -1,2 +1,6 @@
 #ruby rvm
 ruby_version: 2.1.2
+
+#mark yes or no in the next itens to install.
+install_mysql: yes
+install_postgresql: yes
