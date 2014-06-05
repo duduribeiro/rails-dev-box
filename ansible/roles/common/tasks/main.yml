@@ -1,4 +1,7 @@
-- name: Install packages
+- name: Update and cache apt-get
+  apt: update_cache=yes cache_valid_time=3600
+  
+- name: Install common packages
   apt: name={{item}} state=present
   with_items:
     - build-essential
