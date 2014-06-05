@@ -22,7 +22,7 @@
 
 - name: Create vagrant user with CREATE privileges.
   sudo_user: postgres
-  postgresql_user: name=vagrant password=NULL role_attr_flags=CREATEDB,NOSUPERUSER
+  postgresql_user: name=vagrant password=vagrant role_attr_flags=CREATEDB,NOSUPERUSER
   tags:
     - postgresql
 

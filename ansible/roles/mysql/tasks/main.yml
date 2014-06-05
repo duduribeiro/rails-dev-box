@@ -8,4 +8,4 @@
     - mysql
 
 - name: Create vagrant user in MySQL
-  mysql_user: name=vagrant password=NULL priv=*.*:ALL state=present
+  mysql_user: name=vagrant password=mysql priv=*.*:ALL state=present
