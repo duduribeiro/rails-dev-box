@@ -11,3 +11,4 @@
     - rails
     - { role: postgresql, when: install_postgresql }
     - { role: mysql, when: install_mysql }
+    - redis

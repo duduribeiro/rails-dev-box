@@ -1,0 +1,4 @@
+- name: Install Redis
+  apt: "pkg=redis-server state=latest force=yes"
+  tags:
+    - redis
