@@ -1,3 +1,10 @@
+### What is included?
+1. RVM
+2. Rails 4
+3. MySQL
+4. PostgreSQL
+5. Redis
+
 ### Running the dev box.
 1. Install [Python](http://www.python.org.br/wiki) and [pip](https://github.com/pypa/pip)
 2. Install [VirtualBox](http://www.virtualbox.org)
