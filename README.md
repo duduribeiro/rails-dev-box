@@ -16,7 +16,7 @@
 5. Clone the project
 ```
   git clone git@github.com:duduribeiro/rails-dev-box.git
-  cd rail-dev-box
+  cd rails-dev-box
 ```
 6. Start the box
 ```
